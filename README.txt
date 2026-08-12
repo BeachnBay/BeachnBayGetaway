@@ -4,7 +4,7 @@ Files:
 - index.html        Main website
 - styles.css        Design / responsive styling
 - script.js         Gallery + lightbox
-- photos/           Property photos
+- photos/           Property photos (not in folder, fixed/changed to root)
 
 Direct booking email:
 retreatmanagementllc@gmail.com
