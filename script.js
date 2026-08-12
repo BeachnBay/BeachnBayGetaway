@@ -12,7 +12,7 @@ photos.forEach((file, index) => {
   btn.type = 'button';
   btn.setAttribute('aria-label', `Open property photo ${index + 1}`);
   const img = document.createElement('img');
-  img.src = `photos/${file}`;
+  img.src = `${file}`;
   img.alt = `Beach & Bay Getaway property photo ${index + 1}`;
   img.loading = 'lazy';
   btn.appendChild(img);
@@ -23,7 +23,7 @@ photos.forEach((file, index) => {
 let current = 0;
 const box = document.getElementById('lightbox');
 const boxImg = document.getElementById('lightboxImage');
-function show(i){ current=(i+photos.length)%photos.length; boxImg.src=`photos/${photos[current]}`; }
+function show(i){ current=(i+photos.length)%photos.length; boxImg.src=`${photos[current]}`; }
 function openLightbox(i){ show(i); box.classList.add('open'); box.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; }
 function closeLightbox(){ box.classList.remove('open'); box.setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
 document.getElementById('lightboxClose').onclick=closeLightbox;
